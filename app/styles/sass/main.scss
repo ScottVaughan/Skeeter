@@ -1,0 +1,19 @@
+
+@import "compass";
+@import "compass/css3"; 
+@import "partials/base/variables"; //import this first so other partials can use it.
+
+/*@import "../vendors/bootstrap-sass-official/assets/stylesheets/_bootstrap";  The varibales file needs to be chnaged to: ../../../../styles/partials/variables*/
+//@import "../vendors/bootstrap-sass-official/assets/stylesheets/_bootstrap-compass";
+
+//@import "partials/base/_normalize";
+@import "partials/base/_base";
+@import "partials/pages/_home";
+@import "partials/pages/_browse";
+@import "partials/_tag";
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+
+.header {
+  position: relative;
+  height: 250px;
+  background:$header-color;
+  background: radial-gradient(#648880, #293f50);
+
+  #title{
+    position: absolute;
+    left: 25%;
+    bottom: 20%;
+  }
+
+  #logo{
+    position: absolute;
+    padding: 1%;
+    left: 15%;
+    bottom: 0%;
+    color: #33a0ff;
+    font-size: 10.0em;
+    font-family: "Times New Roman";
+    text-decoration: none;
+    border: 2px solid $border-color;
+    box-shadow: 2px 2px 5px $shadow-color;
+    background: white;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.headerNav{
+  height:100px;
+  background:white;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  font-size: 5.0em;
+  font-family: "Times New Roman";
+   text-decoration: none;
+
+  ul {
+  }
+
+  li {
+  }
+
+  a {
+  }
+
+  a:hover {
+    color:#99ddff;
+
+  }
+}
+
+
+.callout {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.video-bg,
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+.video-overlay {
+  background: rgba(0,0,0,0.5);
+  pointer-events: none; /* Allows right clicking on the video to pause etc */
+}
+
+.video-bg video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.callout-content {
+  position: relative;
+  text-align: center;
+  margin: 50px 0; /* This adds some space around the video */
+  color: #FFF;
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+#emText{
+  font-size: 1.5em;
+  position: absolute;
+  left: 35%;
+  top:5%
+}
+
+#secondaryText{
+  position: absolute;
+  left: 45%;
+   top:20%
+}
+
+.footer {
+  width:100%;
+  height:800px;
+  background:$footer-color;
+  background: linear-gradient(to right bottom, #648880, #293f50);
+  border-radius: 6px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+
+  li {}
+
+  a {
+    width: 60px;
+    color:white;
+  }
+
+  a:hover {
+    color:#99ddff;
+  }
+}
+#CopyRighted{
+  color:white;
+}

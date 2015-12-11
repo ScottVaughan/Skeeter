@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "name": "skeeter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ScottVaughan@bitbucket.org/ScottVaughan/skeeter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ScottVaughan/skeeter#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootstrap-webpack": "0.0.5",
+    "copy-loader": "^0.1.3",
+    "exports-loader": "^0.6.2",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "history": "^1.13.1",
+    "imports-loader": "^0.6.5",
+    "jquery": "^2.1.4",
+    "json-loader": "^0.5.4",
+    "less-loader": "^2.2.2",
+    "mongoose": "^4.2.10",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-draggable": "^1.1.3",
+    "react-expandable-nav": "^0.1.18",
+    "react-router": "^1.0.0",
+    "url-loader": "^0.5.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-react": "^6.1.18",
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9"
+  },
+  "description": ""
+}

@@ -1,0 +1,38 @@
+To get webpack working:
+
+install webpack:
+	npm install webpack --save
+
+install loaders:
+	npm install extract-text-webpack-plugin --save
+ 	npm install --save exports-loader imports-loader less-loader url-loader
+
+npm install --save bootstrap-webpack
+
+webpack --progress --colors -d --watch
+
+
+
+
+Note: if you copy it out of here it maynot work. You might have to type it. 
+if you are using any os that is not stupid windows, your webpack.config.js:
+module.exports = {
+  context: __dirname + "/app",
+...
+
+if you are using windows, your webpack.config.js:
+var p = require('path');
+module.exports = {
+	context: p.join(__dirnam,'app'),
+...
+
+
+If you get error because of database:
+
+Open server.js and commend out these 2 line-
+	var mongoose = require('mongoose');
+	var db = mongoose.connect('mongodb://localhost/list');
+
+...
+
+Node module was reset just to install mongoose. The old modules are in modules.old just so I wouldn't delete them. We can change them back whenever we want.

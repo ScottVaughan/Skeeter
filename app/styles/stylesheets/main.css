@@ -1,0 +1,394 @@
+/*@import "../vendors/bootstrap-sass-official/assets/stylesheets/_bootstrap";  The varibales file needs to be chnaged to: ../../../../styles/partials/variables*/
+/***These styles are for the entire application***/
+/* line 3, ../sass/partials/base/_base.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* line 10, ../sass/partials/base/_base.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* line 16, ../sass/partials/base/_base.scss */
+body {
+  background: #8b8a85;
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  /*center content*/
+}
+
+/* line 27, ../sass/partials/base/_base.scss */
+#content {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+/* line 32, ../sass/partials/base/_base.scss */
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 6px red;
+}
+
+/* line 40, ../sass/partials/base/_base.scss */
+h1 {
+  font-size: 8.0em;
+  font-family: "Times New Roman";
+  white-space: nowrap;
+  color: #F9F9F9;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 1px 3px 5px #000, -1px -1px 0 #c25b56,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  z-index: 1;
+}
+
+/* line 51, ../sass/partials/base/_base.scss */
+h2 {
+  font-size: 300%;
+  font-family: "Times New Roman";
+  white-space: nowrap;
+  color: #F9F9F9;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 1px 3px 5px #000, -1px -1px 0 #c25b56,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  z-index: 2;
+}
+
+/* line 62, ../sass/partials/base/_base.scss */
+li {
+  padding: 3%;
+  display: inline;
+}
+
+/* line 2, ../sass/partials/pages/_home.scss */
+.header {
+  position: relative;
+  height: 250px;
+  background: #525564;
+  background: radial-gradient(#648880, #293f50);
+}
+/* line 8, ../sass/partials/pages/_home.scss */
+.header #title {
+  position: absolute;
+  left: 25%;
+  bottom: 20%;
+}
+/* line 14, ../sass/partials/pages/_home.scss */
+.header #logo {
+  position: absolute;
+  padding: 1%;
+  left: 15%;
+  bottom: 0%;
+  color: #33a0ff;
+  font-size: 10.0em;
+  font-family: "Times New Roman";
+  text-decoration: none;
+  border: 2px solid #282828;
+  box-shadow: 2px 2px 5px #282828;
+  background: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 31, ../sass/partials/pages/_home.scss */
+.headerNav {
+  height: 100px;
+  background: white;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  font-size: 5.0em;
+  font-family: "Times New Roman";
+  text-decoration: none;
+}
+/* line 51, ../sass/partials/pages/_home.scss */
+.headerNav a:hover {
+  color: #99ddff;
+}
+
+/* line 58, ../sass/partials/pages/_home.scss */
+.callout {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+/* line 64, ../sass/partials/pages/_home.scss */
+.video-bg,
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+/* line 73, ../sass/partials/pages/_home.scss */
+.video-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  /* Allows right clicking on the video to pause etc */
+}
+
+/* line 78, ../sass/partials/pages/_home.scss */
+.video-bg video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 88, ../sass/partials/pages/_home.scss */
+.callout-content {
+  position: relative;
+  text-align: center;
+  margin: 50px 0;
+  /* This adds some space around the video */
+  color: #FFF;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+/* line 96, ../sass/partials/pages/_home.scss */
+#emText {
+  font-size: 1.5em;
+  position: absolute;
+  left: 35%;
+  top: 5%;
+}
+
+/* line 103, ../sass/partials/pages/_home.scss */
+#secondaryText {
+  position: absolute;
+  left: 45%;
+  top: 20%;
+}
+
+/* line 109, ../sass/partials/pages/_home.scss */
+.footer {
+  width: 100%;
+  height: 800px;
+  background: #525564;
+  background: linear-gradient(to right bottom, #648880, #293f50);
+  border-radius: 6px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+/* line 120, ../sass/partials/pages/_home.scss */
+.footer ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+/* line 127, ../sass/partials/pages/_home.scss */
+.footer a {
+  width: 60px;
+  color: white;
+}
+/* line 132, ../sass/partials/pages/_home.scss */
+.footer a:hover {
+  color: #99ddff;
+}
+
+/* line 136, ../sass/partials/pages/_home.scss */
+#CopyRighted {
+  color: white;
+}
+
+/* line 1, ../sass/partials/pages/_browse.scss */
+#container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: #444444;
+}
+
+/* line 10, ../sass/partials/pages/_browse.scss */
+.canvas {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+/* line 18, ../sass/partials/pages/_browse.scss */
+.browse-canvas {
+  width: 180px;
+  height: 110px;
+  background-color: #FFF;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  line-height: 110px;
+  margin-left: 12px;
+  font-size: 1.5em;
+}
+
+/* line 29, ../sass/partials/pages/_browse.scss */
+.browse-canvas:hover {
+  border: 2px solid #33a0ff;
+}
+
+/* line 33, ../sass/partials/pages/_browse.scss */
+#container a {
+  text-decoration: none;
+  display: block;
+}
+
+/* line 38, ../sass/partials/pages/_browse.scss */
+#container a:hover {
+  color: #33a0ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* line 44, ../sass/partials/pages/_browse.scss */
+.nav {
+  position: absolute;
+}
+
+/* line 48, ../sass/partials/pages/_browse.scss */
+.logo a {
+  color: #33a0ff;
+  font-size: 2.0em;
+  font-family: "Times New Roman";
+  text-decoration: none;
+}
+
+/* line 55, ../sass/partials/pages/_browse.scss */
+.logo a:hover, .logo a:focus {
+  color: #ffffff;
+}
+
+/* line 59, ../sass/partials/pages/_browse.scss */
+.s:hover, .s:focus {
+  font-size: 2.0em;
+}
+
+/* line 63, ../sass/partials/pages/_browse.scss */
+.small {
+  paddingLeft: 0;
+}
+
+/* line 67, ../sass/partials/pages/_browse.scss */
+.full {
+  paddingLeft: 0;
+}
+
+/* line 71, ../sass/partials/pages/_browse.scss */
+.glyphicon {
+  color: #33a0ff;
+}
+
+/* line 74, ../sass/partials/pages/_browse.scss */
+.glyphicon:hover, .glyphicon:focus, .glyphicon:active {
+  color: #ffffff;
+}
+
+/* line 1, ../sass/partials/_tag.scss */
+.canvas-container {
+  position: absolute;
+  overflow: hidden;
+  width: 5000px;
+  height: 5000px;
+  background-image: url("/assets/images/backgrounds/pattern006-dark.png");
+}
+
+/* line 9, ../sass/partials/_tag.scss */
+.tag {
+  position: absolute;
+  border-radius: 0px 5px 20px 5px;
+  width: 300px;
+  height: 200px;
+  background-color: rgba(0, 0, 255, 0.5);
+  padding: 5px;
+  border: 2px solid black;
+  float: top;
+}
+
+/* line 19, ../sass/partials/_tag.scss */
+.tag:hover {
+  border: 2px solid #33a0ff;
+}
+
+/* line 23, ../sass/partials/_tag.scss */
+.tagTitle {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  overflow: hidden;
+  float: right;
+}
+
+/* line 31, ../sass/partials/_tag.scss */
+.tagTitle h3 {
+  display: inline;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.2em;
+  top: -10px;
+  color: #F9F9F9;
+  text-shadow: 1px 3px 5px #000, -1px -1px 0 #c25b56,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* line 40, ../sass/partials/_tag.scss */
+.tag textarea {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  font-family: sans-serif;
+  font-size: 10px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  resize: none;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+/* line 58, ../sass/partials/_tag.scss */
+.tag textarea:focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+/* line 67, ../sass/partials/_tag.scss */
+.tag-avatar {
+  position: relative;
+  width: 100px;
+  height: 100%;
+  float: top;
+  top: -15px;
+  left: -10px;
+  border: solid black 2px;
+}
+
+/* line 76, ../sass/partials/_tag.scss */
+.tag-avatar img {
+  max-width: 100%;
+  max-height: 100%;
+}
